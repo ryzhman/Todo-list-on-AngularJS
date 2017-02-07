@@ -1,0 +1,49 @@
+.inputNewTask {
+    /*width: 60%;*/
+    text-align: center;
+    position: relative;
+    font-family: arial, sans-serif, bold;
+    font-size: 18px;
+    color: #039;
+}
+
+#hor-zebra {
+    font-family: arial, sans-serif, bold;
+    font-size: 16px;
+    margin: 45px;
+    width: 75%;
+    text-align: center;
+    border-collapse: collapse;
+    position: relative;
+
+}
+
+caption, h2{
+    font-family: arial, sans-serif, bold;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    color: #039;
+}
+
+#hor-zebra th {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px 8px;
+    color: #039;
+    text-align: center;
+    border-bottom: solid;
+}
+
+#hor-zebra tr {
+    padding: 8px;
+    color: #669;
+    text-align: center;
+    border-spacing: 2px;
+    border-color: grey;
+    padding: 20%;
+}
+
+#hor-zebra tr:nth-of-type(even) {
+    background: #e8edff;
+}

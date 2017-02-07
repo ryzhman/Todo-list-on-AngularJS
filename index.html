@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJs</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+</head>
+<body>
+
+<div ng-controller="todoListCtrl">
+    <form ng-submit="addNewItem()">
+        <table id="hor-zebra">
+            <caption>My todo list</caption>
+            <th>Task</th>
+            <th>Urgency</th>
+            <th>Mark done</th>
+            <tr ng-repeat="item in todoList track by $index" ng-if="!item.done">
+                <td>{{item.text}}</td>
+                <td>{{item.urgency}}</td>
+                <td><input type="checkbox" ng-model="item.done"></td>
+            </tr>
+        </table>
+        <p class="inputNewTask">
+            <input type="text" ng-model="text">   Enter new item here</input>
+        </p>
+        <p class="inputNewTask" ng-if="text">
+            <input type="text" ng-model="urgency">   Enter item's urgency here</input>
+        </p>
+        <p class="inputNewTask"><button ng-disabled="!text">Add item</button></p>
+    </form>
+</div>
+
+
+<script src="node_modules/angular/angular.js"></script>
+<script src="src/entryPoint.js"></script>
+<script src="src/todoListController.js"></script>
+</body>
+</html>
