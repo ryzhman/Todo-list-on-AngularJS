@@ -1,32 +1,23 @@
 module.exports = {
-    entry: {
-        "bundle": "./src/entryPoint.js",
-        // "bundle.min": "./build/bundle.min.js",
-    },
+    context: __dirname + "/src",
+    entry: "./entryPoint.js",
     output: {
-        path: '/build',
+        path: __dirname + "/public",
         filename: "bundle.js"
     },
     module: {
-        /*preLoaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "jshint-loader"
-            }
-        ],*/
         loaders: [
             {
-                test: /\.html$/,
-                loader: "html"
-            },
-            {
-                test: /\.jsx?$/,
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015']
                 }
             }
-        ],
+        ]
+    },
+    devServer: {
+        // port: 8080
     }
 };
