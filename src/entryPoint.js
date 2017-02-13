@@ -1,13 +1,17 @@
 /**
  * Created by Олександр on 02.02.2017.
  */
-// import basics from "./basics";
+'use strict';
 
+import angular from "angular";
+import todoListService from "./services/todoListService";
+import todoListController from "./controllers/todoListController";
 
-angular.module('app',[]); //setter
-//1 param - getter, 2 param - setter
+angular.module('app', [])
+    .constant('appConfig', {name: 'app'})
+    .controller("todoListCtrl", todoListController)
+    .service("TodoListService", todoListService);
 
-// angular.module('app'); //getter
 
 
 

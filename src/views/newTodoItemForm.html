@@ -1,0 +1,5 @@
+    <form ng-submit="todoCtrl.addNewTodoItem()">
+        <ng-include src="'src/views/newTodoInputs.html'"></ng-include>
+
+        <p class="inputNewTask"><button ng-disabled="!todoCtrl.task">Add item</button></p>
+    </form>

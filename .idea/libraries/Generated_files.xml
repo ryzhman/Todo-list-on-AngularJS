@@ -2,13 +2,25 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/src/appController.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/todoListController.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/services/todoListService.js" />
+        <item url="file://$PROJECT_DIR$/dist/public/bundle.js" />
+        <item url="file://$PROJECT_DIR$/dist/webpack.config.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/entryPoint.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/controllers/todoListController.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/src/services/dataService.js" />
       <root url="file://$PROJECT_DIR$/dist/src/appController.js" />
       <root url="file://$PROJECT_DIR$/dist/src/todoListController.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/services/dataService.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/appController.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/todoListController.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/services/todoListService.js" />
+      <root url="file://$PROJECT_DIR$/dist/public/bundle.js" />
+      <root url="file://$PROJECT_DIR$/dist/webpack.config.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/entryPoint.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/controllers/todoListController.js" />
     </CLASSES>
     <SOURCES />
   </library>
